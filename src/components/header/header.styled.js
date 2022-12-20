@@ -1,26 +1,46 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  height: 10vh;
   color: ${(props) => props.theme.text};
   background-color: ${(props) => props.theme.background};
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
 `;
 
 export const Head = styled.div`
-  background-color: lightblue;
   display: flex;
   justify-content: space-between;
-  div {
+
+  button {
     display: flex;
-    button {
-      color: ${(props) => props.theme.text};
+    align-items: center;
+    border: none;
+    :hover {
+      cursor: pointer;
     }
   }
+`;
+
+export const LeftSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   button {
-    padding: 0.2rem 1rem;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 0rem 0rem 0.5rem black;
-    background-color: ${(props) => props.theme.background};
+    font-size: 0.75rem;
+    align-items: flex-end;
+    gap: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    color: ${(props) => props.theme.buttonText};
   }
+`;
+
+export const AddButton = styled.button`
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0rem 0rem 0.5rem ${(props) => props.theme.shadow};
+  background-color: ${(props) => props.theme.background};
 `;
