@@ -9,8 +9,9 @@ export const LayoutContainer = styled.div`
 `;
 
 export const Main = styled.div`
-  /* height: 90%; */
-  /* overflow-y: scroll; */
-  /* scroll-behavior: smooth; */
+  height: 90%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   background-color: lightgreen;
+  padding: 1rem;
 `;

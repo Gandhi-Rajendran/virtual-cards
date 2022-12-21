@@ -1,9 +1,5 @@
-import React from 'react'
+import styled from "styled-components";
 
-const blocked.styled = () => {
-  return (
-    <div>blocked.styled</div>
-  )
-}
-
-export default blocked.styled
+export const BlockedContainer = styled.div`
+  background-color: blue;
+`;

@@ -1,5 +1,7 @@
+import { BlockedContainer } from "./blocked.styled";
+
 const Blocked = () => {
-  return <div>Blocked</div>;
+  return <BlockedContainer>Blocked</BlockedContainer>;
 };
 
 export default Blocked;

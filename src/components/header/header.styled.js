@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
   padding: 1.5rem;
+  padding-bottom: 0;
 `;
 
 export const Head = styled.div`

@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./utils/theme";
 import Your from "./pages/your";
@@ -17,9 +22,10 @@ const App = () => {
           <Header />
           <Main>
             <Routes>
-              <Route path="/" element={<Your />} />
+              <Route path="/your" element={<Your />} />
               <Route path="/all" element={<All />} />
               <Route path="/blocked" element={<Blocked />} />
+              <Route path="*" element={<Navigate to="/all" />} />
             </Routes>
           </Main>
         </Layout>
