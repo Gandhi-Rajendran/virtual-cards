@@ -1,8 +1,6 @@
-import { useState } from "react";
-import { BiFilter, BiSearch } from "react-icons/bi";
 import Cards from "../../components/cards";
-import { AllContainer, Body, FilterButton, Header } from "./all.styled";
-// import data from "./db.json";
+import ContainerHeader from "../../components/container-header";
+import { AllContainer, Body } from "./all.styled";
 
 const DATA = [
   {
@@ -29,7 +27,7 @@ const DATA = [
     owner_id: 1,
     owner_name: "Rajesh",
     spent: {
-      value: 100,
+      value: 600,
       currency: "SGD",
     },
     available_to_spend: {
@@ -47,11 +45,11 @@ const DATA = [
     owner_id: 1,
     owner_name: "Rajesh",
     spent: {
-      value: 100,
+      value: 900,
       currency: "SGD",
     },
     available_to_spend: {
-      value: 1000,
+      value: 400,
       currency: "SGD",
     },
     card_type: "subscription",
@@ -62,32 +60,9 @@ const DATA = [
 ];
 
 const All = () => {
-  const [search, setSearch] = useState("");
-  const [isSearch, setIsSearch] = useState(false);
-
   return (
     <AllContainer>
-      <Header>
-        <span onClick={() => setIsSearch(!isSearch)}>
-          <BiSearch />
-        </span>
-        {isSearch ? (
-          <input
-            type="text"
-            placeholder="Search Card..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        ) : (
-          ""
-        )}
-        <FilterButton>
-          <span>
-            <BiFilter />
-          </span>
-          Filter
-        </FilterButton>
-      </Header>
+      <ContainerHeader />
       <Body>
         {DATA.map((data, i) => (
           <Cards data={data} key={i} />

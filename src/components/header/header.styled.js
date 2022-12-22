@@ -42,6 +42,6 @@ export const AddButton = styled.button`
   gap: 0.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  box-shadow: 0rem 0rem 0.5rem ${(props) => props.theme.shadow};
+  box-shadow: 0 0 1rem ${(props) => props.theme.shadow};
   background-color: ${(props) => props.theme.background};
 `;

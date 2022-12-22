@@ -20,21 +20,21 @@ const Navbar = () => {
       <nav>
         <A
           to="/your"
-          selected={navSelect === "your" ? 1 : 0}
+          selected={navSelect === "your"}
           onClick={() => setNavSelect("your")}
         >
           Your
         </A>
         <A
           to="/all"
-          selected={navSelect === "all" ? 1 : 0}
+          selected={navSelect === "all"}
           onClick={() => setNavSelect("all")}
         >
           All
         </A>
         <A
           to="/blocked"
-          selected={navSelect === "blocked" ? 1 : 0}
+          selected={navSelect === "blocked"}
           onClick={() => setNavSelect("blocked")}
         >
           Blocked

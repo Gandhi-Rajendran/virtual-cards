@@ -1,14 +1,17 @@
 export const lightTheme = {
   text: "#1E1E1E",
   textSecondary: "#707070",
+  cardText: "#8D959D",
   navBorder: "#DCDCDC",
   navSelect: "#EB4869",
   background: "#ffffff",
   buttonText: "#3175E3",
+  buttonText2: "#ffffff",
   buttonBackground: "#F8F8F8",
-  buttonShadow: "#F0F0F0",
+  buttonBackground2: "#EB4869",
   logo: "#EB4869",
   logoBackground: "#FEF6F7",
   barSpent: "#EB4869",
   barAvailable: "#49935A",
+  shadow: "#D3D3D3",
 };
